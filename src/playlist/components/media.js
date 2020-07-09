@@ -5,7 +5,8 @@ import './media.css';
 class Media extends PureComponent{
     state={
         author:"Willy"
-    }/*
+    }
+    /*
     constructor(props){
         
         super(props);
@@ -39,13 +40,15 @@ class Media extends PureComponent{
                          width={240}
                          height={160}>
                      </img>
-                     <h3 className="Media-title">{title}</h3>
-                    <p className="Media-author">{author}</p>
+                     <h3 className="Media-title">{title} 🎵</h3>
+                    <p className="Media-author">{author} 🙍</p>
                 </div>
             </div>
         )
     }
-}
+}  
+
+
 
 Media.propTypes ={
     cover: PropTypes.string,
