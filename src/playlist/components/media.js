@@ -17,14 +17,13 @@ class Media extends PureComponent{
         //this.handleClick = this.handleClick.bind(this);
     }*/
    /* nueva syntaxis de ES2017+ es mucho más corta y moderna(stage2) */
-	/*handleClick = (event) => {
-        //console.log(this.props.image);
+	handleClick = (event) => {
         /*Los estados son mutables, los props no*/
         /*this.setState({
 			author: "Luis Rosas"
-        }) 
-        //this.props.openModal(this.props);
-    }*/
+        }) */
+        this.props.openModal(this.props);
+    }
    
     render(){
         const {
@@ -33,7 +32,7 @@ class Media extends PureComponent{
             author
         } = this.props;
         return (
-            <div className="Media" onClick={this.props.handleClick}>
+            <div className="Media" onClick={this.handleClick}>
                 <div className="Media-cover">
                     <img src={cover}
                          alt=""
